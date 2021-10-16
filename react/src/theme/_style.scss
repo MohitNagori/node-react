@@ -1,0 +1,36 @@
+.theme-light {
+    --primary-color: #007bff;
+    --disabled-color: #aaafb4;
+    --body-color: #FFFFFF;
+    --text-color: #363537;
+    --border-color: #6B8096;
+    --black: #000000;
+    --gradient: linear-gradient(#39598A, #79D7ED);
+}
+
+.theme-dark {
+    --primary-color: #000000;
+    --disabled-color: #E2E2E2;
+    --body-color: #363537;
+    --text-color: #FAFAFA;
+    --border-color: #091236;
+    --black: #FFFFFF;
+    --gradient: linear-gradient(#091236, #1E215D);
+}
+
+// Global CSS
+.app-button {
+    background: transparent;
+    padding: 10px;
+    border: solid 1px var(--black);
+    color: var(--black);
+    margin: 10px;
+    border-radius: 5px;
+} 
+
+.app-icon {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+}

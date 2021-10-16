@@ -1,0 +1,11 @@
+@import '../../theme/style';
+
+.app-footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px; 
+}

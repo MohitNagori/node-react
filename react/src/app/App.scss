@@ -1,0 +1,6 @@
+@import '../theme/style';
+
+.app-main {
+    min-height: calc(100vh - 120px);
+    background-color: var(--body-color);
+}

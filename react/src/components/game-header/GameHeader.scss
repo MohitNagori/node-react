@@ -1,0 +1,17 @@
+@import '../../theme/style';
+
+.app-gameheader {
+    .app-timer {
+        padding: 20px;
+        border: solid 1px var(--border-color);
+        display: inline-block;
+        margin: 20px;
+        border-radius: 5px;
+        background-color: var(--body-color);
+    }
+
+    .app-refresher {
+        float: right;
+        padding: 20px;
+    }
+}

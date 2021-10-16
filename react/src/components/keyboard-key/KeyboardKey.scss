@@ -1,0 +1,28 @@
+@import '../../theme/style';
+
+.app-keyboard-key {
+    padding: 5px;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 1px var(--border-color);
+    color: var(--text-color);
+    background-color: var(--body-color);
+
+    &.selected {
+        background-color: var(--disabled-color);
+    }
+
+    &.hovered {
+        background-color: var(--disabled-color);
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+    }
+}

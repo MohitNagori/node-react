@@ -1,0 +1,21 @@
+@import '../../theme/style';
+
+.app-header {
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 80px;
+    background-color: var(--primary-color);   
+    display: flex;
+    align-items: center;
+
+    .app-title {
+        color: var(--black);
+    }
+
+    h1 {
+        flex: 1;
+        padding: 10px;
+    }
+}
+
