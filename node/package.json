@@ -1,0 +1,79 @@
+{
+  "name": "node-app",
+  "version": "1.0.0",
+  "description": "Node Demo App",
+  "main": "app.js",
+  "scripts": {
+    "start": "by-node-env",
+    "start:dev": "nodemon",
+    "start:prod": "node --enable-source-maps ./app.js",
+    "prebuild": "rimraf ./dist",
+    "lint": "eslint -c .eslintrc.json ./src --ext .js,.ts",
+    "build": "tsc",
+    "pretest": "jest --clearCache",
+    "test": "jest --detectOpenHandles --verbose -i",
+    "test:watch": "npm run test -- --watchAll",
+    "prettier": "prettier --write 'src/**/*.{ts,json}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MohitNagori/node-react"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/MohitNagori/node-react#readme",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "@types/jest": "^26.0.4",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/lodash": "^4.14.168",
+    "@types/mongoose": "^5.10.4",
+    "@types/supertest": "^2.0.11",
+    "@types/uuid": "^8.3.1",
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.21.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^6.0.0",
+    "jest": "^26.0.1",
+    "lint-staged": "^11.0.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.3.0",
+    "rimraf": "^3.0.2",
+    "supertest": "^6.1.3",
+    "ts-jest": "^26.1.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "by-node-env": "^2.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.13.11",
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{json,ts}": [
+      "prettier --write"
+    ]
+  }
+}
